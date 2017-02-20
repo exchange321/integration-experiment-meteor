@@ -35,7 +35,5 @@ An experiment of integrating React, Redux, React Router, React Native, and Meteo
 ## Logs
 * webpack:webpack hasn't been actively updated and it doesn't support the latest Meteor version 1.4+
     - Webpack Integration is dropped in this project
----
 * Meteor for Windows is incredibly slow
     - Separation of client and server is under consideration
----
