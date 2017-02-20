@@ -1,6 +1,6 @@
 # Integration Experiment (Meteor)
 An experiment of integrating React, Redux, React Router, React Native, and Meteor.
-For Firebase version, this here -> [Integration Experiment (Firebase)](https://github.com/exchange321/integration-experiment-firebase/)
+For Firebase version, click here -> [Integration Experiment (Firebase)](https://github.com/exchange321/integration-experiment-firebase/)
 
 ## Current Status
 * App Initialized, App Skeleton Online
