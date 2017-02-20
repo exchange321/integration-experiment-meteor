@@ -2,16 +2,26 @@
 An experiment of integrating React, Redux, React Router, React Native, and Meteor.
 
 ## Current Status
-* Initializing App
+* App Initialized, App Skeleton Online
 
 ## Finished
+- [x] Initialization
+    - [x] ~~Babel Configuration~~
+    - [x] ~~PostCSS ( CSSNext ) Integration~~
 
 ## Todos
 * Core:
-    - [ ] **Initialization**
-        - [ ] Babel Configuration
-        - [ ] PostCSS ( CSSNext ) Integration
-    - [ ] Transforming App for Firebase to Meteor ( React Web )
+    - [ ] **Transforming App for Firebase to Meteor ( React Web )**
+        - [ ] Teachers (Read)
+        - [ ] Topics (Read)
+        - [ ] Courses (Read)
+        - [ ] User Authentication & Authorization
+        - [ ] Teachers (Edit)
+        - [ ] Teachers (Delete)
+        - [ ] Topics (Edit)
+        - [ ] Topics (Delete)
+        - [ ] Courses (Edit)
+        - [ ] Courses (Delete)
     - [ ] Transforming App for Firebase to Meteor ( React Native )
     - [ ] Adding Content Modification to Native/Mobile App
     
