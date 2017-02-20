@@ -1,22 +1,19 @@
 /**
  * Created by Wayuki on 20-Feb-17.
  */
-import React, { Component } from 'react';
+import React from 'react';
 
-class AppContainer extends Component {
+import { Provider } from 'react-redux';
+import configureStore from './store/configureStore';
 
-    renderApp = () => (
-        <div className="container">
-            <h1 className="text-center">Hello World</h1>
-        </div>
-    );
+import AppRouter from './AppRouter.jsx';
 
-    render() {
-        return (
-            this.renderApp()
-        );
-    }
+const store = configureStore();
 
-}
+const AppContainer = () => (
+    <Provider store={store}>
+        <AppRouter store={store} />
+    </Provider>
+);
 
 export default AppContainer;
