@@ -1,0 +1,14 @@
+[
+  {
+    "alias": "html",
+    "name": "HTML"
+  },
+  {
+    "alias": "css",
+    "name": "CSS"
+  },
+  {
+    "alias": "javascript",
+    "name": "JavaScript"
+  }
+]
