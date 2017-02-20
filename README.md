@@ -26,7 +26,7 @@ An experiment of integrating React, Redux, React Router, React Native, and Meteo
     - [ ] Adding Content Modification to Native/Mobile App
     
 * Optional: 
-    - [ ] Transforming Pure CSS to Material UI ( React Web )
+    - [ ] Transforming Pure CSS + Bootstrap to Material UI ( React Web )
     - [ ] Allowing Multiple Login Methods ( Email/Password, Facebook, Google )
     - [ ] Integrating User Management
     - [ ] Integrating Offline Storage ( LocalStorage for React Web, AsyncStorage for React Native )
