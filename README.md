@@ -1,5 +1,6 @@
 # Integration Experiment (Meteor)
 An experiment of integrating React, Redux, React Router, React Native, and Meteor.
+For Firebase version, click here -> [Integration Experiment (Firebase)](https://github.com/exchange321/integration-experiment-firebase/)
 
 ## Current Status
 * App Initialized, App Skeleton Online
@@ -33,9 +34,7 @@ An experiment of integrating React, Redux, React Router, React Native, and Meteo
     - [ ] Integrating GraphQL
     
 ## Logs
-* webpack:webpack hasn't been actively updated and it doesn't support the latest Meteor version 1.4+
+* [webpack:webpack](https://atmospherejs.com/webpack/webpack) hasn't been actively updated and it doesn't support the latest Meteor version 1.4+
     - Webpack Integration is dropped in this project
-***
 * Meteor for Windows is incredibly slow
     - Separation of client and server is under consideration
-***
