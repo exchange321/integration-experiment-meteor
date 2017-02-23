@@ -3,24 +3,25 @@ An experiment of integrating React, Redux, React Router, React Native, and Meteo
 For Firebase version, click here -> [Integration Experiment (Firebase)](https://github.com/exchange321/integration-experiment-firebase/)
 
 ## Current Status
-* App Initialized, App Skeleton Online
+* TeacherPage online, functionality is being added
 
 ## Finished
 - [x] Initialization
     - [x] ~~Babel Configuration~~
     - [x] ~~PostCSS ( CSSNext ) Integration~~
+- [ ] **Transforming App for Firebase to Meteor ( React Web )**
+    - [x] ~~Teachers (Read)~~
 
 ## Todos
 * Core:
     - [ ] **Transforming App for Firebase to Meteor ( React Web )**
-        - [ ] Teachers (Read)
-        - [ ] Topics (Read)
-        - [ ] Courses (Read)
-        - [ ] User Authentication & Authorization
         - [ ] Teachers (Edit)
         - [ ] Teachers (Delete)
+        - [ ] User Authentication & Authorization
+        - [ ] Topics (Read)
         - [ ] Topics (Edit)
         - [ ] Topics (Delete)
+        - [ ] Courses (Read)
         - [ ] Courses (Edit)
         - [ ] Courses (Delete)
     - [ ] Transforming App for Firebase to Meteor ( React Native )
