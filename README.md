@@ -3,7 +3,7 @@ An experiment of integrating React, Redux, React Router, React Native, and Meteo
 For Firebase version, click here -> [Integration Experiment (Firebase)](https://github.com/exchange321/integration-experiment-firebase/)
 
 ## Current Status
-Notice: As Meteor build time in my Surface Pro 3 takes forever and it crashes a lot when building (EBUSY), this project is on-hold until I can get a Mac/Linux or Meteor is fixed.
+Notice: As Meteor build time in my Surface Pro 3 takes forever and it crashes a lot when building (EBUSY), this project is on-hold until I can get a Mac/Linux or Meteor is fixed. As a result, I will move to my another project: [Integration Experiment (Express)](https://github.com/exchange321/integration-experiment-express) from now on. 
 * TeacherPage online, functionality is being added
 
 ## Finished
