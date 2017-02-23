@@ -17,13 +17,14 @@ For Firebase version, click here -> [Integration Experiment (Firebase)](https://
     - [ ] **Transforming App for Firebase to Meteor ( React Web )**
         - [ ] Teachers (Edit)
         - [ ] Teachers (Delete)
-        - [ ] User Authentication & Authorization
         - [ ] Topics (Read)
         - [ ] Topics (Edit)
         - [ ] Topics (Delete)
         - [ ] Courses (Read)
         - [ ] Courses (Edit)
         - [ ] Courses (Delete)
+        - [ ] User Authentication & Authorization
+        - [ ] Adding Restrictions to Editing and Deleting
     - [ ] Transforming App for Firebase to Meteor ( React Native )
     - [ ] Adding Content Modification to Native/Mobile App
     
