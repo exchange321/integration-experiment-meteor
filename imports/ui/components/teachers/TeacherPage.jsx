@@ -39,6 +39,7 @@ class TeacherPage extends Component {
             modalTitle: PropTypes.string.isRequired,
             saveButtonText: PropTypes.string.isRequired,
             teacher: PropTypes.shape({
+                _id: PropTypes.string,
                 name: PropTypes.string.isRequired,
                 bio: PropTypes.string.isRequired,
                 img_src: PropTypes.string.isRequired,
@@ -63,7 +64,7 @@ class TeacherPage extends Component {
 
     showForm = (teacherId = null) => {
         if (teacherId) {
-            const teacher = this.props.teachers[teacherId];
+            const teacher = this.props.teachers.filter(eachTeacher => eachTeacher._id === teacherId)[0];
             this.props.actions.showForm(teacher, `Edit ${teacher.name}`, 'Save Changes', teacherId);
         } else {
             this.props.actions.showForm();
@@ -150,17 +151,16 @@ class TeacherPage extends Component {
                     >
                         {
                             teachers &&
-                            Object.keys(teachers).map((teacherId) => {
-                                const teacher = teachers[teacherId];
+                            teachers.map((teacher) => {
                                 return (
                                     <Teacher
-                                        key={teacherId}
-                                        id={teacherId}
+                                        key={teacher._id}
+                                        id={teacher._id}
                                         name={teacher.name}
                                         bio={teacher.bio}
                                         img={teacher.img_src}
-                                        editing={teacherId === editingTeacherId}
-                                        handleTeacherClick={() => this.showForm(teacherId)}
+                                        editing={teacher._id === editingTeacherId}
+                                        handleTeacherClick={() => this.showForm(teacher._id)}
                                     />
                                 );
                             })

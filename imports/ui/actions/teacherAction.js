@@ -1,10 +1,8 @@
 /**
  * Created by Wayuki on 03-Feb-17 0003.
  */
-import { routerActions } from 'react-router-redux';
 import { TEACHER_ACTION_TYPES } from './actionTypes';
 import { setNotification } from './appAction';
-import * as helpers from '../helpers/helpers';
 
 const processingSaveTeacher = isSavingTeacher => ({
     type: TEACHER_ACTION_TYPES.PROCESSING_SAVE_TEACHER,
@@ -53,8 +51,41 @@ export const handleFormFieldChange = (key, value) => (
 );
 
 export const saveTeacher = () => (
-    () => {
-        console.log('Saving Teacher...');
+    (dispatch, getState) => {
+        const { teacherPage: { modal: { teacher } } } = getState();
+
+        // Form Validation - Start
+        let hasError = false;
+        const msg = {};
+        if (teacher.name.trim().length <= 0) {
+            hasError = true;
+            msg.name = 'No content';
+        }
+        if (teacher.bio.trim().length <= 0) {
+            hasError = true;
+            msg.bio = 'No content';
+        }
+        if (teacher.img_src.trim().length <= 0) {
+            hasError = true;
+            msg.img_src = 'No content';
+        }
+        // Form Validation - End
+
+        if (hasError) {
+            dispatch(setErrorMessage(msg));
+        } else {
+            dispatch(processingSaveTeacher(true));
+
+            Meteor.call('editTeacher', teacher, (err) => {
+                if (err) {
+                    dispatch(setNotification('error', err.message));
+                } else {
+                    dispatch(setNotification('success', 'Teacher Saved.'));
+                    dispatch(hideForm());
+                }
+                dispatch(processingSaveTeacher(false));
+            });
+        }
         // if (firebase.auth().currentUser) {
         //     const { teacherPage: { editingTeacherId, modal: { teacher } } } = getState();
         //

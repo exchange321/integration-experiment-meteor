@@ -80,16 +80,6 @@ const teacherReducer = (state = initialState.teacherPage, action) => {
                 },
             };
         }
-        case TEACHER_ACTION_TYPES.SET_NOTIFICATION: {
-            return {
-                ...state,
-                notification: {
-                    hasNotification: true,
-                    type: action.nocType,
-                    msg: action.msg,
-                },
-            };
-        }
         case TEACHER_ACTION_TYPES.SET_ERROR_MESSAGE: {
             return {
                 ...state,

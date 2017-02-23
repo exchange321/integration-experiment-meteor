@@ -3,11 +3,15 @@
  */
 import { APP_ACTION_TYPES } from './actionTypes';
 
-export const setNotification = (nocType, msg) => ({
-    type: APP_ACTION_TYPES.SET_NOTIFICATION,
-    nocType,
-    msg,
-});
+export const setNotification = (nocType, msg) => (
+    dispatch => {
+        dispatch({
+            type: APP_ACTION_TYPES.SET_NOTIFICATION,
+            nocType,
+            msg,
+        });
+    }
+);
 
 export const resetNotification = () => ({
     type: APP_ACTION_TYPES.RESET_NOTIFICATION,
